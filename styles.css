@@ -1,0 +1,260 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header with background image */
+.top-nav {
+  background-color: #2c3e50;
+  padding: 10px 0;
+  text-align: center;
+}
+
+/* Navigation Bar */
+/* Navigation Bar */
+.top-nav {
+  background-color: #2c3e50;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 4px;
+}
+
+.nav-links a:hover {
+  background-color: #ffcc00;
+  color: #2c3e50;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links a {
+    font-size: 18px;
+    padding: 10px;
+  }
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.top-nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Header Section */
+.main-header {
+  background-image: url('assets/background1.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 250px;
+  padding: 20px;
+}
+
+.main-header h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+@media (max-width: 768px) {
+  header {
+    height: 200px;
+  }
+  header h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Hero section */
+.hero {
+  background-color: #ecf0f1;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #2c3e50;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #34495e;
+}
+
+.about {
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.services {
+  text-align: center;
+}
+
+.service-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.service-item {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 280px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+}
+
+.service-item h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.service-item p {
+  color: #555;
+}
+
+/* Gallery section */
+.gallery {
+  text-align: center;
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.gallery-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.gallery-images a {
+  text-decoration: none;
+}
+
+.gallery-images img {
+  width: 260px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-images img:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+  .gallery-images img {
+    width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .gallery-images img {
+    width: 100%;
+  }
+}
+
+/* Contact section */
+.contact {
+  padding: 3rem 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  margin-top: 40px;
+}
+
+.site-footer a {
+  color: #ffcc00;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .gallery-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gallery-images img {
+    width: 100%;
+    height: auto;
+  }
+
+  .main-header {
+    height: 150px;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
